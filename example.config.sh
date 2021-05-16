@@ -3,15 +3,15 @@
 # Port from moonraker
 port="7125"
 # Your telegram bot token
-token="1488878465:AAGFICWfr5Ym1FaJdWL3oHLB9EuIN5AaWik"
+token="your_token"
 # Your chat ID
-chatid="1401197316"
+chatid="your_chatid"
 #
 # messages for the states
 ### for the placeholders in the messages look at https://github.com/Raabi91/moonraker-telegram/blob/master/docs/Variables.md
 #
 # Start message
-msg_start=""
+msg_start="Started printing $print_filename"
 # error/failed message
 msg_error="printing of $print_filename Failed"
 # Pause message
@@ -32,7 +32,7 @@ msg_error="hey, i had a error. please look it up"
 # time in seconds to get an State update. to disable set it to 0
 time="0"
 # with picture = 1, without picture = 0  
-picture="1"
+picture="0"
 # your webcam snapshot link
 webcam="http://127.0.0.1:8080/?action=snapshot"
 #rotate the pic bevor sending, use degrease 0-360
@@ -50,10 +50,10 @@ delay_end_msg=="0"
 # Delay for the Pause Message
 delay_pause_msg=="0"
 #Led on link for picture
-led_on="http://127.0.0.1:$port/printer/gcode/script?script=led_on"
+led_on=""
 #Led on wait time before picture is taken (in seconds) 
-led_on_delay="3"
+led_on_delay="0"
 #Led off link for picture
-led_off="http://127.0.0.1:$port/printer/gcode/script?script=led_off"
+led_off=""
 #Led off wait time after picture is taken (in seconds)
 led_off_delay="0"
